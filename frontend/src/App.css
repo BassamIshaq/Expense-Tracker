@@ -1,0 +1,92 @@
+/* Main App Styles */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* Error Alert */
+.error-alert {
+  background-color: #ffebee;
+  color: #c62828;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border-left: 4px solid #c62828;
+}
+
+/* Form Styles */
+.form-container {
+  margin-top: 24px;
+}
+
+/* Custom Chart Tooltip */
+.custom-tooltip {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation for Charts */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.chart-container {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsiveness for mobile devices */
+@media (max-width: 600px) {
+  .main-content {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .chart-container {
+    height: 250px !important;
+  }
+}
+
+/* Last Updated Text */
+.last-updated {
+  font-size: 0.8rem;
+  color: #757575;
+  font-style: italic;
+}
+
+/* Category Color Circle */
+.category-color {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Expense Amount Display */
+.expense-amount {
+  font-weight: 500;
+}
+
+.expense-amount.income {
+  color: #4caf50;
+}
+
+.expense-amount.expense {
+  color: #f44336;
+}
